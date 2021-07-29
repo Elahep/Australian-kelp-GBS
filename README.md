@@ -23,7 +23,7 @@ process_radtags -P -p ./CF2 -o ./CF2 -b ./CF2_barcodes_FINAL_forpaper.txt -e pst
 ```
 module load FastQC
 module load MultiQC
-fastqc ./ -t 10
+fastqc ./*.fq.gz -t 10
 multiqc ./
 ```
 
