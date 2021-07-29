@@ -3,7 +3,7 @@
 During the past few years, 3 different runs of GBS have been done for these samples (let's call them CF0, CF1, CF2).
 Most of the samples do not have enough reads, so we need to only include high-quality samples with enough reads. For this purpose we can exclude bad samples at two stages:
 
-1- Before assembling the loci by using FastQC and MultiQC.
+1- Before assembling loci by using FastQC and MultiQC.
 
 2- After assembling loci and before SNP calling following the guidelines in the recently published paper Cerca et al. 2020 (DOI: 10.1111/2041-210X.13562).
 
