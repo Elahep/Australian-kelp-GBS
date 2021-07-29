@@ -1,4 +1,4 @@
-# Analyzing GBS data of two Australia kelp species: *Mcrocystis pyrifera* and *Durvillaea potatorum*.
+# Analyzing GBS data of two Australian kelp species: *Mcrocystis pyrifera* and *Durvillaea potatorum*.
 
 During the past few years, 3 different runs of GBS have been done for these samples (let's call them CF0, CF1, CF2).
 Most of the samples do not have enough reads, so we need to only include high-quality samples with enough reads. For this purpose we can exclude bad samples at two stages:
