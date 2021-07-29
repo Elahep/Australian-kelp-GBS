@@ -4,6 +4,7 @@ During the past few years, 3 different runs of GBS have been done for these samp
 Most of the samples do not have enough reads, so we need to only include high-quality samples with enough reads. For this purpose we can exclude bad samples at two stages:
 
 1- Before assembling the loci by using FastQC and MultiQC.
+
 2- After assembling loci and before SNP calling following the guidelines in the recently published paper Cerca et al. 2020 (DOI: 10.1111/2041-210X.13562).
 
 Step 1 will be done for each GBS run seperately. Then, we can put together the demultiplexed samples of each GBS run to assemble loci seperately for each species and then follow step 2.
