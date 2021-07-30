@@ -20,13 +20,13 @@ process_radtags -P -p ./CF2 -o ./CF2 -b ./CF2_barcodes_FINAL_forpaper.txt -e pst
 
 *process_radtags* outputs 4 files per sample. In order to procede with the rest of the analyses, I will concatenate these four files so I will have only 1 *.fq.gz* file per sample which includes both forward and reverse reads. (Note that *denovo_map.pl* of Stacks has an option (*--paired* flag) which allows you to skip concatinating these 4 files. However, I usually concatenate the files to easily use them for QC using FastQC and MultiQC.)
 
-I have written this bash script to make the concatenation easier. Run this in the directory that only contains the 4 output files of *process_radtags* for each sample. This script will create another script called *concatenate.sh* which should be run subsequently and that will eventually concatenate the 4 files per sample.
+I have written this bash script (let's call it concatenate_4processRadtag.sh) to make the concatenation easier. Run this in the directory that only contains the 4 output files of *process_radtags* for each sample. This script will create another script called *concatenate.sh* which should be run subsequently and that will eventually concatenate the 4 files per sample.
 
 
 ```
 #!/bin/bash
 ls | cat | grep -vE "list.txt|concatenate_4processRadtag.sh" > list.txt  ##creates a list which includes the names of all files (4 per each sample)
-										                                                     ##created by process_radtags. names are sorted alphabetically.
+								         ##created by process_radtags. names are sorted alphabetically.
 awk "NR%2==0" list.txt > cat0_1.txt ##cuts even lines from the list file and saves that in a new file
 awk "NR%2==1" list.txt > cat1_1.txt  ##cuts the odd lines
 awk "NR%2==0" cat0_1.txt > cat0_2.txt ##keep cutting odd and even lines!!
