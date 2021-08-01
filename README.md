@@ -5,7 +5,7 @@ Most of the samples do not have enough reads, so we need to only include high-qu
 
 1- Before assembling loci by using FastQC and MultiQC.
 
-2- After assembling loci and before SNP calling following the guidelines in the recently published paper Cerca et al. 2020 (DOI: 10.1111/2041-210X.13562).
+2- After assembling loci by checking the VCF output file and removing individuals with more than 80% missing sites.
 
 Step 1 will be done for each GBS run seperately. Then, we can put together the demultiplexed samples of each GBS run to assemble loci seperately for each species and then follow step 2.
 
@@ -52,3 +52,6 @@ multiqc ./
 
 Now open *multiqc_report.html* to check the number of reads per sample. We have to consider a threshold to exclude low-quality samples. We can start by 0.5 million.
 So any sample with less than 0.5 reads will be excluded. Accordingly, we can create a new *population map* file which only includes samples that passed this QC threshold. This *population map* file will be further updated by doing the 2nd step of quality control (see above).
+
+
+
