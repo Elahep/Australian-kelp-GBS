@@ -50,5 +50,5 @@ fastqc ./*.fq.gz -t 10
 multiqc ./
 ```
 
-Now open *multiqc_report.html* to check the number of reads per sample. We have to consider a threshold to exclude the low-quality samples. We can start by 0.5 million.
+Now open *multiqc_report.html* to check the number of reads per sample. We have to consider a threshold to exclude low-quality samples. We can start by 0.5 million.
 So any sample with less than 0.5 reads will be excluded. Accordingly, we can create a new *population map* file which only includes samples that passed this QC threshold. This *population map* file will be further updated by doing the 2nd step of quality control (see above).
