@@ -47,12 +47,12 @@ Genotyped 76483 loci:
 
 (*missing SNP per sample for each VCF file can be found in attached .imiss files*)
 
-`-r70 --max-obs-het 0.6` ->  (11534 SNPs,11534 loci,29.4% missing data)
+`-r70 --max-obs-het 0.6` ->  11648 loci, 18,633 SNPs, 33.72 percent missing data
 
-`-r70 --max-obs-het 0.6 --write-random-snp`  ->  (18,634 SNPs,11648 loci,33.72% missing data)
+`-r70 --max-obs-het 0.6 --write-random-snp`  ->  11476 SNPs, 29.85 percent missing data 
 
-`-r50 --max-obs-het 0.6`  ->  (25356 SNPs,14649 loci,38.43% missing data)
+`-r50 --max-obs-het 0.6`  ->  14650 loci, 25,357 SNPs, 38.43 percent missing data
 
-`-r50 --max-obs-het 0.6 --write-random-snp`  ->  (14544 SNPs,14544 loci,32.71% missing data)
+`-r50 --max-obs-het 0.6 --write-random-snp`  ->  14487 SNPs, 33.18 percent missing data
 
 
