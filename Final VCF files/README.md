@@ -25,7 +25,7 @@ Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
 
 * *M. pyrifera*:
 
-After quality control and removong low-quality samples, I ended up with 56 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
+After quality control and removong low-quality samples, I ended up with 50 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
 Accordingly, we will use M3, n4 and m3 for de novo assembly of loci.
 
 ### gstacks results:
