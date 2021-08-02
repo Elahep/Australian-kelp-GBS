@@ -1,9 +1,3 @@
-CF0_K10	Keyhole
-CF0_K12	Keyhole
-CF0_K13	Keyhole
-CF0_K4	Keyhole
-CF0_K8	Keyhole
-CF0_K9	Keyhole
 CF2_Mac4ml31	fourMile
 CF2_Mac4ml32	fourMile
 CF2_Mac4ml37	fourMile
