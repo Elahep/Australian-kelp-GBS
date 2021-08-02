@@ -34,10 +34,14 @@ Accordingly, we will use M3, n4 and m3 for de novo assembly of loci.
 
 ### number of SNPs and missing data for each different *populations* runs with different r parameters:
 
--r70 --max-obs-het 0.6 ->  ( SNPs, loci, missing data)
+(*missing SNP per sample for each VCF file can be found in attached .imiss files*)
 
--r70 --max-obs-het 0.6 --write-random-snp  ->  ( SNPs, loci, missing data)
+-r70 --max-obs-het 0.6 ->  (11534 SNPs,11534 loci,29.4% missing data)
 
--r50 --max-obs-het 0.6  ->  ( SNPs, loci, missing data)
+-r70 --max-obs-het 0.6 --write-random-snp  ->  (18,634 SNPs,11648 loci,33.72% missing data)
 
--r50 --max-obs-het 0.6 --write-random-snp  ->  ( SNPs, loci, missing data)
+-r50 --max-obs-het 0.6  ->  (25356 SNPs,14649 loci,38.43% missing data)
+
+-r50 --max-obs-het 0.6 --write-random-snp  ->  (14544 SNPs,14544 loci,32.71% missing data)
+
+
