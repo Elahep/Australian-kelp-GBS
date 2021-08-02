@@ -55,3 +55,146 @@ So any sample with less than 0.5 reads will be excluded. Accordingly, we can cre
 
 
 
+
+Here is the list of the samples that failed the 0.5 million read threshold and will be removed from further analysis:
+
+```
+##samples in CF0 sequencing run:
+rm Dur4mi1.fq.gz
+rm DurBic28.fq.gz
+rm DurBic29.fq.gz
+rm DurBic5.fq.gz
+rm DurBic8.fq.gz
+rm DurFis7.fq.gz
+rm DurLad6.fq.gz
+rm DurStH19.fq.gz
+
+##samples in CF1 sequencing run:
+rm K1.fq.gz
+rm K11.fq.gz
+rm K14.fq.gz
+rm K15.fq.gz
+rm K16.fq.gz
+rm K17.fq.gz
+rm K18.fq.gz
+rm K19.fq.gz
+rm K2.fq.gz
+rm K20.fq.gz
+rm K21.fq.gz
+rm K22.fq.gz
+rm K23.fq.gz
+rm K24.fq.gz
+rm K25.fq.gz
+rm K3.fq.gz
+rm K5.fq.gz
+rm K6.fq.gz
+rm K7.fq.gz
+rm Pass20.fq.gz
+rm Pass8.fq.gz
+rm SC12.fq.gz
+rm TA18.fq.gz
+rm TA2.fq.gz
+rm TA21.fq.gz
+rm TA22.fq.gz
+rm TA3.fq.gz
+rm TA8.fq.gz
+rm TA9.fq.gz
+
+##samples in CF2 sequencing run:
+rm Mac4ml36.fq.gz
+rm Mac4ml41.fq.gz
+rm Mac4ml42.fq.gz
+rm MacEdn1.fq.gz
+rm MacEdn2.fq.gz
+rm MacFish4.fq.gz
+rm MacFish5.fq.gz
+rm MacFish7.fq.gz
+rm MacFish8.fq.gz
+rm MacKey1.fq.gz
+rm MacKey2.fq.gz
+rm MacKey3.fq.gz
+rm MacKey5.fq.gz
+rm MacKey6.fq.gz
+rm MacKey8.fq.gz
+rm MacShel10.fq.gz
+rm MacShel11.fq.gz
+rm MacShel13.fq.gz
+rm MacShel14.fq.gz
+rm MacShel6.fq.gz
+rm MacShel8.fq.gz
+rm MacShel9.fq.gz
+rm potLady7.fq.gz
+rm potPas29.fq.gz
+rm potPas30.fq.gz
+rm potPas31.fq.gz
+rm potPas34.fq.gz
+rm potPas35.fq.gz
+```
+
+
+After removing these samples, run *denovo_map.pl* for each species separately and check the amount of missing SNPs per individual using *VCFtools*:
+
+```
+denovo_map.pl --samples /*Macrocystis or Durvillaea samples* --popmap /*population map file* -o ./ -M 3 -n 4 -m 3 -r 0.8 -X "populations: --vcf"
+
+vcftools --vcf populations.snps.vcf --missing-indv
+```
+
+The following samples had more than 80% missing data in r80 loci:
+
+```
+rm K10.fq.gz
+rm K12.fq.gz
+rm K13.fq.gz
+rm K4.fq.gz	
+rm K8.fq.gz	
+rm K9.fq.gz	
+rm potFish27.fq.gz
+rm potFish28.fq.gz
+rm	potFish32.fq.gz
+rm	potLady1.fq.gz
+rm	potLady10.fq.gz
+rm	potLady11.fq.gz
+rm	potLady12.fq.gz
+rm	potLady13.fq.gz
+rm	potLady14.fq.gz
+rm	potLady15.fq.gz
+rm	potLady2.fq.gz
+rm	potLady3.fq.gz
+rm	potLady4.fq.gz
+rm	potLady5.fq.gz
+rm	potLady6.fq.gz
+rm	potLady8.fq.gz
+rm	potLady9.fq.gz
+rm	potRoar35.fq.gz
+rm	potRoar36.fq.gz
+rm	potRoar37.fq.gz
+rm	potRoar38.fq.gz
+rm	potRoar39.fq.gz
+rm	potRoar40.fq.gz
+rm	potRoar41.fq.gz
+rm	potRoar42.fq.gz
+rm	potRoar43.fq.gz
+rm	potRoar44.fq.gz
+rm	potSkn26.fq.gz
+rm	potSkn27.fq.gz
+rm	potSkn28.fq.gz
+rm	potSkn29.fq.gz
+rm	potSkn30.fq.gz
+rm	CF0_DurBic30.fq.gz
+rm	CF0_DurFis3.fq.gz
+rm	CF0_DurLad2.fq.gz
+rm	CF0_DurLad3.fq.gz
+rm	CF0_DurLad4.fq.gz
+rm	CF0_DurRoa11.fq.gz
+rm	CF0_DurRoa21.fq.gz
+rm	CF0_DurRoa22.fq.gz
+rm	CF0_DurRoa23.fq.gz
+rm	CF0_DurRoa24.fq.gz
+rm	CF0_DurRoa25.fq.gz
+rm	CF0_DurRoa26.fq.gz
+rm	CF0_DurRoa27.fq.gz
+rm	CF0_DurRoa28.fq.gz
+rm	CF0_DurRoa29.fq.gz
+rm	CF0_DurRoa3.fq.gz
+rm	CF0_DurRoa30.fq.gz
