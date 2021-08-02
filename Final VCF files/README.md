@@ -30,8 +30,9 @@ Accordingly, we will use M3, n4 and m3 for de novo assembly of loci.
 
 ### gstacks results:
 
-### samples depth of coverage:
-
+Genotyped 76483 loci:
+  effective per-sample coverage: mean=42.9x, stdev=10.7x, min=18.3x, max=70.1x
+  
 ### number of SNPs and missing data for each different *populations* runs with different r parameters:
 
 (*missing SNP per sample for each VCF file can be found in attached .imiss files*)
