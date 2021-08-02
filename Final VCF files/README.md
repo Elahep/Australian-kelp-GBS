@@ -1,4 +1,4 @@
-#Final SNP calling results for *D. potatorum* and *M. pyrifera*:
+##Final SNP calling results for *D. potatorum* and *M. pyrifera*:
 
 
 *D. potatorum*:
