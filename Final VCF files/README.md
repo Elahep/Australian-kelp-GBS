@@ -1,7 +1,7 @@
 ## Final SNP calling results for *D. potatorum* and *M. pyrifera*:
 
 
-*D. potatorum*:
+* *D. potatorum*:
 
 After quality control and removong low-quality samples, I ended up with 123 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
 Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
@@ -24,7 +24,7 @@ Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
 
 
 
-*M. pyrifera*:
+* *M. pyrifera*:
 
 After quality control and removong low-quality samples, I ended up with 56 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
 Accordingly, we will use M3, n4 and m3 for de novo assembly of loci.
