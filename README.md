@@ -59,7 +59,7 @@ So any sample with less than 0.5 reads will be excluded. Accordingly, we can cre
 Here is the list of the samples that failed the 0.5 million read threshold and will be removed from further analysis:
 
 ```
-##samples in CF0 sequencing run:
+##samples from CF0 sequencing run:
 rm Dur4mi1.fq.gz
 rm DurBic28.fq.gz
 rm DurBic29.fq.gz
@@ -69,7 +69,7 @@ rm DurFis7.fq.gz
 rm DurLad6.fq.gz
 rm DurStH19.fq.gz
 
-##samples in CF1 sequencing run:
+##samples from CF1 sequencing run:
 rm K1.fq.gz
 rm K11.fq.gz
 rm K14.fq.gz
@@ -100,7 +100,7 @@ rm TA3.fq.gz
 rm TA8.fq.gz
 rm TA9.fq.gz
 
-##samples in CF2 sequencing run:
+##samples from CF2 sequencing run:
 rm Mac4ml36.fq.gz
 rm Mac4ml41.fq.gz
 rm Mac4ml42.fq.gz
@@ -145,12 +145,15 @@ vcftools --vcf populations.snps.vcf --missing-indv
 The following samples had more than 80% missing data in r80 loci and will be removed from further analysis:
 
 ```
+##Macrocystis samples from CF1 sequencing run:
 rm K10.fq.gz
 rm K12.fq.gz
 rm K13.fq.gz
 rm K4.fq.gz	
 rm K8.fq.gz	
 rm K9.fq.gz	
+
+##Durvillaea samples CF2 sequencing run:
 rm potFish27.fq.gz
 rm potFish28.fq.gz
 rm potFish32.fq.gz
@@ -183,6 +186,8 @@ rm potSkn27.fq.gz
 rm potSkn28.fq.gz
 rm potSkn29.fq.gz
 rm potSkn30.fq.gz
+
+##Durvillaea samples CF0 sequencing run:
 rm CF0_DurBic30.fq.gz
 rm CF0_DurFis3.fq.gz
 rm CF0_DurLad2.fq.gz
@@ -200,6 +205,8 @@ rm CF0_DurRoa28.fq.gz
 rm CF0_DurRoa29.fq.gz
 rm CF0_DurRoa3.fq.gz
 rm CF0_DurRoa30.fq.gz
+
+##Durvillaea samples CF1 sequencing run:
 rm SC1.fq.gz
 rm SC11.fq.gz
 rm SC16.fq.gz
