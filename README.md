@@ -140,7 +140,9 @@ denovo_map.pl --samples /*Macrocystis or Durvillaea samples* --popmap /*populati
 vcftools --vcf populations.snps.vcf --missing-indv
 ```
 
-The following samples had more than 80% missing data in r80 loci:
+
+
+The following samples had more than 80% missing data in r80 loci and will be removed from further analysis:
 
 ```
 rm K10.fq.gz
