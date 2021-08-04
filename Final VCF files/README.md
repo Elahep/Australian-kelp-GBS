@@ -5,7 +5,7 @@
 * *D. potatorum*:
 
 
-After quality control and removong low-quality samples, I ended up with 123 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
+After quality control and removong low-quality samples, I ended up with 155 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
 Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
 
 
@@ -17,13 +17,13 @@ Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
 
 ### number of SNPs and missing data for each different *populations* runs with different r parameters:
 
-`-r70 --max-obs-het 0.6`  ->   ( SNPs, loci, missing data)
+`-r70 --max-obs-het 0.6`  ->   17175 loci, 59,729 SNPs, 56.47 percent missing data
 
-`-r70 --max-obs-het 0.6 --write-random-snp`   ->  ( SNPs, loci, missing data)
+`-r70 --max-obs-het 0.6 --write-random-snp`   ->  16903 SNPs, 62.66 percent missing data
 
-`-r50 --max-obs-het 0.6`   ->  ( SNPs, loci, missing data)
+`-r50 --max-obs-het 0.6`   ->  25344 loci, 87,081 SNPs, 59.72 percent missing data
 
-`-r50 --max-obs-het 0.6 --write-random-snp`   ->  ( SNPs, loci, missing data)
+`-r50 --max-obs-het 0.6 --write-random-snp`   ->  25026 SNPs, 66.96 percent missing data
 
 
 
