@@ -5,7 +5,7 @@ Most of the samples do not have enough reads, so we need to only include high-qu
 
 1- Before assembling loci by using FastQC and MultiQC.
 
-2- After assembling loci by checking the VCF output file and removing individuals with more than 80% missing sites.
+2- After assembling loci by checking the VCF output file and removing individuals with more than 90% missing sites.
 
 Step 1 will be done for each GBS run seperately. Then, we can put together the demultiplexed samples of each GBS run to assemble loci seperately for each species and then follow step 2.
 
@@ -142,7 +142,7 @@ vcftools --vcf populations.snps.vcf --missing-indv
 
 
 
-The following samples had more than 80% missing data in r80 loci and will be removed from further analysis:
+The following samples had more than 90% missing data in r80 loci and will be removed from further analysis:
 
 ```
 ##Macrocystis samples from CF1 sequencing run:
@@ -152,74 +152,6 @@ rm K13.fq.gz
 rm K4.fq.gz	
 rm K8.fq.gz	
 rm K9.fq.gz	
+```
 
-##Durvillaea samples CF2 sequencing run:
-rm potFish27.fq.gz
-rm potFish28.fq.gz
-rm potFish32.fq.gz
-rm potLady1.fq.gz
-rm potLady10.fq.gz
-rm potLady11.fq.gz
-rm potLady12.fq.gz
-rm potLady13.fq.gz
-rm potLady14.fq.gz
-rm potLady15.fq.gz
-rm potLady2.fq.gz
-rm potLady3.fq.gz
-rm potLady4.fq.gz
-rm potLady5.fq.gz
-rm potLady6.fq.gz
-rm potLady8.fq.gz
-rm potLady9.fq.gz
-rm potRoar35.fq.gz
-rm potRoar36.fq.gz
-rm potRoar37.fq.gz
-rm potRoar38.fq.gz
-rm potRoar39.fq.gz
-rm potRoar40.fq.gz
-rm potRoar41.fq.gz
-rm potRoar42.fq.gz
-rm potRoar43.fq.gz
-rm potRoar44.fq.gz
-rm potSkn26.fq.gz
-rm potSkn27.fq.gz
-rm potSkn28.fq.gz
-rm potSkn29.fq.gz
-rm potSkn30.fq.gz
 
-##Durvillaea samples CF0 sequencing run:
-rm CF0_DurBic30.fq.gz
-rm CF0_DurFis3.fq.gz
-rm CF0_DurLad2.fq.gz
-rm CF0_DurLad3.fq.gz
-rm CF0_DurLad4.fq.gz
-rm CF0_DurRoa11.fq.gz
-rm CF0_DurRoa21.fq.gz
-rm CF0_DurRoa22.fq.gz
-rm CF0_DurRoa23.fq.gz
-rm CF0_DurRoa24.fq.gz
-rm CF0_DurRoa25.fq.gz
-rm CF0_DurRoa26.fq.gz
-rm CF0_DurRoa27.fq.gz
-rm CF0_DurRoa28.fq.gz
-rm CF0_DurRoa29.fq.gz
-rm CF0_DurRoa3.fq.gz
-rm CF0_DurRoa30.fq.gz
-
-##Durvillaea samples CF1 sequencing run:
-rm SC1.fq.gz
-rm SC11.fq.gz
-rm SC16.fq.gz
-rm SC18.fq.gz
-rm SC4.fq.gz
-rm SC5.fq.gz
-rm SC7.fq.gz
-rm SC8.fq.gz
-rm SC9.fq.gz
-rm TA10.fq.gz
-rm TA17.fq.gz
-rm TA19.fq.gz
-rm TA4.fq.gz
-rm TA5.fq.gz
-rm TA7.fq.gz
-rm TV2.fq.gz
