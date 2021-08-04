@@ -7,7 +7,8 @@
 
 After quality control and removong low-quality samples, I ended up with 155 samples. Stacks parameters were optimized to maximize the assembled r80 loci. 
 Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
-Note that at the end, some D. potatorum samples had 80% missing data. However, I did not exclude them and I kept them in the final VCFs. You can always use VCFtools to check the number of missing SNP per sample and remove those samples that you think may cause problems in your population genomic inference due to the high levels of missing data.
+
+Note that at the end, some *D. potatorum* samples had 80% missing data. However, I did not exclude them and I kept them in the final VCFs. You can always use *VCFtools* to check the number of missing SNP per sample and remove those samples that you think may cause problems in your population genomic inference due to the high levels of missing data.
 
 
 ### gstacks results:
