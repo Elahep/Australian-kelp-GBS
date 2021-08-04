@@ -154,7 +154,7 @@ rm K8.fq.gz
 rm K9.fq.gz	
 ```
 
-###Important note
+### Important note
 
 Note that at the end, some *D. potatorum* samples had 80% missing data. However, I did not exclude them and I kept them in the final VCFs. You can always use *VCFtools* to check the number of missing SNP per sample and remove those samples that you think may cause problems in your population genomic inference due to the high levels of missing data.
 
