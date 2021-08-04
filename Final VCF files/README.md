@@ -11,7 +11,8 @@ Accordingly, we will use M5, n6 and m3 for de novo assembly of loci.
 
 ### gstacks results:
 
-
+Genotyped 258026 loci:
+  effective per-sample coverage: mean=70.8x, stdev=19.7x, min=32.4x, max=174.2x
 
 
 
