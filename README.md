@@ -15,7 +15,7 @@ So let's start by first demultiplexing raw reads and then moving to QC.
 
 ```
 module load Stacks
-process_radtags -P -p ./CF2 -o ./CF2 -b ./CF2_barcodes_FINAL_forpaper.txt -e pstI -r -c -q -t 10 --inline-inline
+process_radtags -P -p ./CF2 -o ./CF2 -b ./CF2_barcodes_FINAL_forpaper.txt -e pstI -r -c -q -t 68 --inline-inline
 ```
 
 *process_radtags* outputs 4 files per sample. In order to procede with the rest of the analyses, I will concatenate these four files so I will have only 1 *.fq.gz* file per sample which includes both forward and reverse reads. (Note that *denovo_map.pl* of Stacks has an option (*--paired* flag) which allows you to skip concatinating these 4 files. However, I usually concatenate the files to easily use them for QC using FastQC and MultiQC.)
